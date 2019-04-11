@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import DashboardData
+
+@admin.register(DashboardData)
+class DashboardAdmin(admin.ModelAdmin):
+    list_display = ['servername', 'timestamp', 'memory_load', 'cpu_load']

@@ -17,7 +17,7 @@
             <h3> Memory Load</h3>
           </td>
           <td align="center">
-            <h3>Engine Efficiency</h3>
+            <h3>CPU Load</h3>
           </td>
         </tr>
         <tr>
@@ -67,7 +67,7 @@
       var gauge = new Gauge(target).setOptions(gauge_opts);
       gauge.maxValue = 100;
       gauge.setMinValue(0);
-      gauge.set({{ data.memory_load }});
+      gauge.set({{ data.cpu_load }});
     </script>
   </body>
 </html>

@@ -24,9 +24,15 @@ def dashboard_request_time(request, hour, minute, second):
     return _dashboard_render(request, timestamp)
 
 
+def documentation(request):
+    return render(request, 'docs.html')
+
+
 def _dashboard_render(request, timestamp):
     try:
         data = DashboardData.objects.get(timestamp=timestamp)
     except DashboardData.DoesNotExist:
         raise Http404('Could not find {}'.format(timestamp))
     return render(request, 'index.html', {'data': data})
+
+

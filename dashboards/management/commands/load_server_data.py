@@ -19,6 +19,7 @@ class Command(BaseCommand):
         print('Populating the database with artificial data')
         for second in secs:
             data = DashboardData()
+            data.servername = 'Test Server'
             data.timestamp = make_aware(second.to_pydatetime())
             data.memory_load = round(random.uniform(1,100), 1)
             data.cpu_load = round(random.uniform(1,100), 1)

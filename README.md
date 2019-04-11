@@ -9,7 +9,8 @@ This dashboard works as a template, for demonstration - System Information such 
 #Todo
 
 ## Authors 
-### Dan Berdikulov
-### Sagynbek Esenbekow
+* [Dan Berdikulov](https://github.com/danchesko) 
+* [Sagynbek Esenbekov](https://github.com/jagger773)
+
 This mini-project is created for Software Engineering course in Ala-Too International University. 
 

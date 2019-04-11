@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+class DashboardData(models.Model):
+    timestamp = models.DateTimeField()
+    memory_load = models.FloatField()
+    cpu_load = models.FloatField()
+    num_processes = models.IntegerField()
+    num_apps = models.IntegerField()
+    memory_intake = models.FloatField()
